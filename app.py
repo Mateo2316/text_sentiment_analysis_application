@@ -1,6 +1,6 @@
 # ============================================================
 # Maestría de Ciencia de Datos
-# 
+#
 # Curso: Transformers
 #
 # Autores:
@@ -8,10 +8,12 @@
 # - Maria Fernanda González Acevedo
 # ============================================================
 
-# Se importa la función que crea la interfaz de usuario
+# Se importan la función que construye la interfaz y su configuración visual
+from user_interface import create_interface, THEME, CSS
 
-# Se llama la función que crea la interfaz de usuario
+# Se crea la aplicación
+demo = create_interface()
 
+# Se lanza la aplicación solo si este archivo se ejecuta directamente
 if __name__ == "__main__":
-    # Se lanza la aplicación de la interfaz de usuario
-    pass
+    demo.launch(theme=THEME, css=CSS)
